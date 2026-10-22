@@ -323,7 +323,7 @@
         </p>
       </div>
 
-      <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+      <sc-if value="{{ !submitted }}" hint-placeholder-val="{{ true }}">
         <form onSubmit="{{ handleSubmit }}" style="display:flex;gap:10px;flex:1;min-width:320px;max-width:460px">
           <input type="email" required="{{ true }}" value="{{ email }}" onChange="{{ handleEmailChange }}" placeholder="you@email.com" style="flex:1;min-width:0;padding:14px 16px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:#fff;font-size:15px;font-family:Inter,sans-serif">
 
@@ -670,7 +670,7 @@
       Leave your email to be the first to hear about discounts, promotions and exciting events from Raw Gravity.
     </p>
 
-    <sc-if value="{{ notSubmitted }}" hint-placeholder-val="{{ true }}">
+    <sc-if value="{{ !submitted }}" hint-placeholder-val="{{ true }}">
       <form onSubmit="{{ handleSubmit }}" style="display:flex;gap:8px;width:100%">
         <input type="email" required="{{ true }}" value="{{ email }}" onChange="{{ handleEmailChange }}" placeholder="you@email.com" style="flex:1;min-width:0;padding:13px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:#fff;font-size:16px;font-family:Inter,sans-serif">
 
